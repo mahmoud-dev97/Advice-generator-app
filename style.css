@@ -1,0 +1,79 @@
+body {
+  position: relative;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  background-color: hsl(218, 23%, 16%);
+  color: hsl(193, 38%, 86%);
+}
+.attribution {
+  position: absolute;
+  color: white;
+  top: 0;
+  left: 0;
+  font-size: 13px;
+}
+.attribution a {
+  color: hsl(150, 100%, 66%);
+}
+.container {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  position: relative;
+  padding: 35px;
+  background-color: hsl(217, 19%, 24%);
+  border-radius: 20px;
+  text-align: center;
+  width: 40rem;
+}
+.card-title {
+  color: hsl(150, 100%, 66%);
+  font-size: 15px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+}
+.ico {
+  position: absolute;
+  background-color: hsl(150, 100%, 66%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -60px;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: ease-in-out 0.3s;
+}
+.ico:hover {
+  box-shadow: 0px 0px 30px 2px rgba(82, 255, 168, 0.55);
+}
+.mob {
+  display: none;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 20px;
+  }
+  .card {
+    width: 20rem;
+    padding: 20px 10px;
+  }
+  .card-title {
+    font-size: 10px;
+  }
+  .mob {
+    display: unset;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .desk {
+    display: none;
+  }
+}
